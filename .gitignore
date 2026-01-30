@@ -1,0 +1,10 @@
+# Ignore SSH keys
+*.pem
+*.key
+*.ppk
+
+# Ignore environment files
+.env
+# OS junk
+.DS_Store
+Thumbs.db
