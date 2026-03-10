@@ -1,12 +1,6 @@
-Md
+# Backup & Recovery
 
-
-
-\# Backup \& Recovery
-
-
-
-\## Recovery Service Vaults
+## Recovery Service Vaults
 
 * Created in shared service resource group.
 * Centralized backup management for multiple workloads
@@ -14,7 +8,7 @@ Md
 
 
 
-\## Backup Policy Configuration
+## Backup Policy Configuration
 
 * Enhanced Backup Policy configured for virtual machines
 * Scheduled backups enabled
@@ -23,11 +17,11 @@ Md
 
 
 
-!\[Backup Policy Overview](screenshots/enhanced-backup-policies.png)
+![Backup Policy Overview](screenshots/enhanced-backup-policies.png)
 
 
 
-!\[Backup Items](screenshots/backup-rsv.png)
+![Backup Items](screenshots/backup-rsv.png)
 
 
 
