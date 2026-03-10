@@ -1,7 +1,3 @@
-Md
-
-
-
 # Powershell Operations - Azure Virtual Machines
 
 
