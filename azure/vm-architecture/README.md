@@ -1,11 +1,3 @@
-Md
-
-
-
-
-
-
-
 \# Azure VM Architecture – Cloud Operations Center
 
 
