@@ -1,10 +1,6 @@
-\## Boot Diagnostics
-
-
+## Boot Diagnostics
 
 Boot diagnostics was enabled on the Windows virtual machine to assist with troubleshooting startup and OS-level issues.
-
-
 
 The feature provides access to:
 
@@ -14,5 +10,5 @@ The feature provides access to:
 
 
 
-!\[Boot Diagnostics Overview](screenshots/windows-boot-diagnotics.png)
+![Boot Diagnostics Overview](screenshots/windows-boot-diagnotics.png)
 
