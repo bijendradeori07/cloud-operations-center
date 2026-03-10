@@ -1,20 +1,9 @@
-Md
+# Azure VM Architecture - Windows \& Linux
 
-
-
-
-
-\# Azure VM Architecture - Windows \& Linux
-
-
-
-\## Overview
-
+## Overview
 This project demonstrates deployment and management of Windows \& Linux virtual machines in Azure following enterprise best practices.
 
-
-
-\## Key Highlights
+## Key Highlights
 
 * Windows Server VM accessed via RDP
 * Ubuntu Linux VM accessed via SSH
@@ -28,21 +17,18 @@ This project demonstrates deployment and management of Windows \& Linux virtual 
 * VM administration performed using PowerShell
 
 
+## Architecture Design
 
-\## Architecture Design
-
-\### Workload Resources Groups:
+### Workload Resources Groups:
 
 * Windows VM Resource Group
 * Linux VM Resource Group
 
 
-
-!\[Resource Group Overview](screenshots/resource-groups-overview.png)
-
+![Resource Group Overview](screenshots/resource-groups-overview.png)
 
 
-\### Shared Resource Group:
+### Shared Resource Group:
 
 * Log Analytics Workspace
 * Recovery Vault Service
