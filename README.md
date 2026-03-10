@@ -1,231 +1,125 @@
-Md
+# Cloud Operations Center (Multi-Cloud)
 
+A simulated **Cloud Operations Center (COC)** designed to mirror real-world, production-style cloud operations across \*\*Azure and AWS**, focusing on **monitoring, security, ITSM SLA and Operational governance\*\*.
 
-
-
-
-\# Cloud Operations Center (Multi-Cloud)
-
-
-
-A simulated **Cloud Operations Center (COC)** designed to mirror real-world, production-style cloud operations across \*\*Azure and AWS\*\*, focusing on \*\*monitoring, security, ITSM SLA and Operational governance\*\*.
-
-
-
-This repository demonstrates not just cloud deployment, but \*end-to-end cloud operations\*\* using \*\*Jira Software, Jira Service Management, and GitHub\*\*.
-
-
-
-
+This repository demonstrates not just cloud deployment, but **end-to-end cloud operations** using **Jira Software, Jira Service Management, and GitHub**.
 
 ---
-
-
-
-\## 🔍 Project Overview
-
-
-
+## 🔍 Project Overview
 The Cloud Operations Center showcases how modern cloud environments are:
+- Deployed
+- Secured
+- Monitored
+- Operated
+- Supported using ITIL-aligned processes
 
+The project follows **real CloudOps / SRE practices**, not lab-only setups.
 
+---
 
-* Deployed
-* Secured
-* Monitored
-* Operated
-* Supported using ITIL-aligned processes
+## ☁️ Cloud Platforms Covered
 
+### Microsoft Azure
+- Linux VM (Ubuntu)
+- Windows Server VM
+- Custom Virtual Network (VNet)
+- Separate subnets for workloads
+- Network Security Groups (NSG) at Subnet level
+- Azure Monitor
+- Alert Rules(VM down, high CPU usage)
+- Recovery Services Vault (Backup, Backup Policy, Retention)
+- Storage Account (Diagnostics \& Logs)
+- RBAC scope awareness
+- Powershell-based operations
 
-
-The project follows \*\*real CloudOps / SRE practices\*\*, not lab-only setups.
+### Amazon Web Services (AWS)
+-  EC2
+- Security Groups
+- Storage
+- Nginx Web Server
+- SSH access with key-based authentication
 
 
 
 ---
 
-
-
-\## ☁️ Cloud Platforms Covered
-
-
-
-\### Microsoft Azure
-
-
-
-* Linux VM (Ubuntu)
-* Windows Server VM
-* Custom Virtual Network (VNet)
-* Separate subnets for workloads
-* Network Security Groups (NSG) at Subnet level
-* Azure Monitor
-* Alert Rules(VM down, high CPU usage)
-* Recovery Services Vault (Backup, Backup Policy, Retention)
-* Storage Account (Diagnostics \& Logs)
-* RBAC scope awareness
-* Powershell-based operations
-
-
-
-\### Amazon Web Services (AWS)
-
-
-
-* EC2
-* Security Groups
-* Storage
-* Nginx Web Server
-* SSH access with key-based authentication
-
-
+## 🏗️ Architecture Highlights
+- Multi-resource-group design
+- Shared service resource group (Monitoring \& Backup)
+- Least-Privilege network security
+- Centralized monitoring
+- Backup \& Recovery readiness
+- Cross-platform operations (Windows \& Linux)
+- Multi-cloud visibility (Azure + AWS)
 
 ---
 
-
-
-
-
-\## 🏗️ Architecture Highlights
-
-
-
-* Multi-resource-group design
-* Shared service resource group (Monitoring \& Backup)
-* Least-Privilege network security
-* Centralized monitoring
-* Backup \& Recovery readiness
-* Cross-platform operations (Windows \& Linux)
-* Multi-cloud visibility (Azure + AWS)
-
-
+## 🛠️ Operations & Tooling
+- **Powershell** for VM Operations
+- **SSH** for Linux administration
+- **Azure Portal & CLI
+- **AWS Management Console**
+- **GitHub** for documentation & evidence
+- **Jira** for delivery & ITSM workflows
 
 ---
 
+## 📊 Monitoring, Alerts \& Backup
 
+### Monitoring
+- Azure Monitor
+- Log Analytics Workspace
+- Performance \& availability metrics
 
+### Alerts
+- VM availability ( VM down)
+- CPU utilization threshold
+- Alerts validation and testing
 
+### Backup
+- Recovery Services Vault
+- Scheduled backups
+- Retention Policies
+- Restore readiness
 
-\## 🛠️ Operations \& Tooling
-
-
-
-* \*\*Powershell\*\* for VM Operations
-* \*\*SSH\*\* for Linux administration
-* \*\*Azure Portal \& CLI
-* \*\*AWS Management Console\*\*
-* \*\*GitHub\*\* for documentation \& evidence
-* \*\*Jira\*\* for delivery \& ITSM workflows
-
-
-
-
-
----
-
-
-
-
-
-\## 📊 Monitoring, Alerts \& Backup
-
-
-
-
-
-\### Monitoring
-
-* Azure Monitor
-* Log Analytics Workspace
-* Performance \& availability metrics
-
-
-
-\### Alerts
-
-* VM availability ( VM down)
-* CPU utilization threshold
-* Alerts validation and testing
-
-
-
-\### Backup
-
-* Recovery Services Vault
-* Scheduled backups
-* Retention Policies
-* Restore readiness
-
-
-
-
-
-\## 🔐 Security \& Governance
-
-* NSG rules applied at subnet level
-* Restricted SSH and RDP access
-* RBAC scope validation
-* Secure storage configuration
-* Sensitive data masked in screenshots
-
-
+## 🔐 Security & Governance
+- NSG rules applied at subnet level
+- Restricted SSH and RDP access
+- RBAC scope validation
+- Secure storage configuration
+- Sensitive data masked in screenshots
 
 ---
 
+## 🧾 ITSM & Jira Integration
 
+This project integrates **Jira Software** and **Jira Service Management** to reflect real operational workflows
 
-\## 🧾 ITSM \& Jira Integration
-
-
-
-This project integrates \*\*Jira Software\*\* and \*\*Jira Service Management\*\* to reflect real operational workflows
-
-
-
-
-
-\### Jira Software (Delivery)
-
-
-
-* Incident Management
-* Problem Management
-* Change Management
-* Service Management
-* SLA definitions
-* Multi-cloud Incident sources (Azure+ AWS)
-
-
+### Jira Software (Delivery)
+- Incident Management
+- Problem Management
+- Change Management
+- Service Management
+- SLA definitions
+- Multi-cloud Incident sources (Azure+ AWS)
 
 ---
 
-\## ⏱️ Service Level Agreements(SLA)
-
-
+## ⏱️ Service Level Agreements(SLA)
 
 SLA are defined for:
+- Incidents (response & resolution)
+- Changes (approval & implementation)
+- Problems (RCA & permanent fix)
+- Service request(fulfillment time)
 
-
-
-* Incidents (response \& resolution)
-* Changes (approval \& implementation)
-* Problems (RCA \& permanent fix)
-* Service request(fulfillment time)
-
-
-
-All SLAs follow \*\*ITIL best practices and documented centrally.
-
-
+All SLAs follow ITIL best practices and documented centrally.
 
 ---
 
 
 ```
-\## 📁 Repository Structure
-
-
-
+## 📁 Repository Structure
 
 
       cloud-operations-center/
@@ -473,61 +367,37 @@ All SLAs follow \*\*ITIL best practices and documented centrally.
 
 ```
 
+## 🎯 Key Outcomes
+- Gained hands-on experience operating multi-cloud environments (Azure + AWS), including provisioning, securing, monitoring and maintaining Linux and Windows workloads.
+- Implemented production-style cloud operations, covering incident management, problem analysis, change control, and service request handling Jira Software and Jira Service Management.
+- Designed and operated secure network architecture, including VNets, Subnets and subnet-level NSGs, with least-privilege access and RBAC awareness.
+- Built and validated end-to-end monitoring and alerting, integrating Azure Monitor, Log Analytics, and AWS CloudWatch to detect availability and performance issues.
+- Established backup and recovery readiness, including Recovery Services Vault configuration, backup policies, retention planning and restore validation.
+- Applied ITI-aligned SLAs for incidents, problems, changes and service request ensuring predictable response, approval and resolution timelines.
+- Performed cross-platform operations using PowerShell and SSH, managing both Windows and Linux systems through command-line-driven workflows.
+- Developed professional operations documentation, including architecture, Jira work item hierarchies, SLA definitions, and security-aware screenshots suitable for audit and interviews
+
+## 👔 Target Roles
+- Cloud Operations Engineer
+- Cloud Operations Analyst
+- DevOps Engineer (Operations-focused)
+- Junior Site Reliability Engineer(SRE)
+- Cloud Support Engineer (L2/L3)
 
 
-
-
-
-
-
-
-\## 🎯 Key Outcomes
-
-
-
-* Gained hands-on experience operating multi-cloud environments (Azure + AWS), including provisioning, securing, monitoring and maintaining Linux and Windows workloads.
-* Implemented production-style cloud operations, covering incident management, problem analysis, change control, and service request handling Jira Software and Jira Service Management.
-* Designed and operated secure network architecture, including VNets, Subnets and subnet-level NSGs, with least-privilege access and RBAC awareness.
-* Built and validated end-to-end monitoring and alerting, integrating Azure Monitor, Log Analytics, and AWS CloudWatch to detect availability and performance issues.
-* Established backup and recovery readiness, including Recovery Services Vault configuration, backup policies, retention planning and restore validation.
-* Applied ITI-aligned SLAs for incidents, problems, changes and service request ensuring predictable response, approval and resolution timelines.
-* Performed cross-platform operations using PowerShell and SSH, managing both Windows and Linux systems through command-line-driven workflows.
-* Developed professional operations documentation, including architecture, Jira work item hierarchies, SLA definitions, and security-aware screenshots suitable for audit and interviews
-
-
-
-\## 👔 Target Roles
-
-
-
-* Cloud Operations Engineer
-* Cloud Operations Analyst
-* DevOps Engineer (Operations-focused)
-* Junior Site Reliability Engineer(SRE)
-* Cloud Support Engineer (L2/L3)
-
-
-
-
-
-\## Disclaimer⚠️
-
-
+## Disclaimer⚠️
 
 This is a simulated Cloud Operations Center created for learning, demonstration and portfolio purposes.
 
 No production customer data is used. All sensitive identifiers are masked.
 
 
-
-
-
-\## Final Note📌
-
-
+## Final Note📌
 
 This is a repository demonstrate how cloud infrastructure is operated in real-world environments, not just deployed.
 
 
 ## Author 
 Bijendra Kumar Deori
+
+Aspiring CloudOps/DevOps Engineer
